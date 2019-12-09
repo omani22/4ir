@@ -9,7 +9,7 @@ pfdir = os.getcwd() + "/files/"
 
 def cnv(xfile):
     global DB,pfdir
-    df = open(pfdir+"/"+xfile).read()
+    df = open(pfdir+"/"+xfile, encoding="utf8").read()
     df = df.split("كافة الحقوق")
     name = xfile.replace(".txt","")
     DB[name] = df
