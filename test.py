@@ -2,7 +2,7 @@ from os import listdir
 from os.path import isfile, join
 import os
 
-LG = {1:"IOT", 2:"AI", 3:"BIGDATA", 4:"BLOCJCHAIN", 5: '3D'}
+LG = {1:"IOT", 2:"AI", 3:"BIGDATA", 4:"BLOCKCHAIN", 5: '3D'}
 DB = {}
 pdir = os.getcwd()
 pfdir = os.getcwd() + "/files/"
