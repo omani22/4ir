@@ -1,5 +1,3 @@
-from os import listdir
-from os.path import isfile, join
 import os
 
 LG = {1: "IOT", 2: "AI", 3: "BIGDATA", 4: "BLOCKCHAIN", 5: '3D'}
@@ -41,7 +39,7 @@ def search(DATABASE):
 
 def main():
     global pfdir, DB
-    onlyfiles = [f for f in listdir(pfdir) if isfile(join(pfdir, f))]
+    onlyfiles = [f for f in os.listdir(pfdir) if os.path.isfile(os.path.join(pfdir, f))]
     for itm in onlyfiles:
         cnv(itm)
     while True:
