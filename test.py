@@ -2,7 +2,6 @@ import os
 
 LG = {1: "IOT", 2: "AI", 3: "BIGDATA", 4: "BLOCKCHAIN", 5: '3D'}
 DB = {}
-
 pfdir = os.getcwd() + "/files/"
 
 
@@ -22,8 +21,8 @@ def choice():
         if xint == -1:
             exit()
         if 1 <= xint <= 5:
-            contin = True
             xchoice = xint
+            contin = True
     return xchoice
 
 
